@@ -13,6 +13,10 @@ app.post("/schedule", (req, res, next) => {
     res.json(req.body);
 });
 
+app.post("/deletescheduled", (req, res, next) => {
+    res.json(req.body);
+});
+
 const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
